@@ -1,0 +1,209 @@
+body{
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    margin:0;
+}
+header{
+    height: 500px;
+    display: flex;
+    background-image: url(.\HW1\images\background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+}
+
+nav img{
+    height: 20%;
+    width: 20%;
+}
+
+#links a, #covid{
+    margin: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+    font-weight: bolder;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#links a, #covid:hover{
+    font-weight: lighter;
+}
+#covid {
+    z-index: 1;
+    margin: 0;
+}
+header h1{
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 1;
+}
+
+header h1 em{
+    font-style: italic;
+    font-size: .5em;
+    font-weight: lighter;
+    font-family: 'Cambria';
+}
+
+
+body{
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    margin:0;
+}
+header{
+    height: 500px;
+    display: flex;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+}
+
+nav img{
+    height: 20%;
+    width: 20%;
+}
+
+#links a, #covid{
+    margin: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+    font-weight: bolder;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#links a:hover, #covid:hover{
+    font-weight: lighter;
+}
+#covid {
+    z-index: 1;
+    margin: 0;
+}
+header h1{
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 1;
+}
+
+header h1 em{
+    font-style: italic;
+    font-size: .5em;
+    font-weight: lighter;
+    font-family: 'Cambria';
+}
+
+footer{
+    position: static;
+    bottom: 0px;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span{
+    text-align: center;
+    color:gray;
+}
+
+#menu {
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+#modale.hidden {
+	display: none; 
+}
+
+#modale {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	
+	background-color: rgba(255, 255, 255, 0.95);
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+    
+}
+
+.no-scroll {
+	overflow: hidden;
+}

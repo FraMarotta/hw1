@@ -1,0 +1,325 @@
+body{
+    font-family: 'Rubik', sans-serif;
+    color: black;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    margin:0;
+}
+header{
+    height: 500px;
+    display: flex;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}
+header nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15%;
+}
+
+nav img{
+    height: 20%;
+    width: 20%;
+}
+
+#links a, #covid{
+    margin-left: 15px;
+    margin-right: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+    font-weight: bolder;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#links a:hover, #covid:hover{
+    font-weight: lighter;
+}
+#covid {
+    z-index: 1;
+    margin: 0;
+}
+header h1{
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 1;
+}
+
+header h1 em{
+    font-style: italic;
+    font-size: .5em;
+    font-weight: lighter;
+    font-family: 'Cambria';
+}
+
+.oval{
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-size: .5em;
+    cursor: pointer;
+}
+
+/*a.oval:hover {
+    background-color: white;
+    color: black;
+}*/
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Info{
+    background-color: rgba(135, 207, 235, 0.486);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Info p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+#main h1{
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Inspiration', cursive;
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+#main p{
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.boxes_img, .boxes_txt{
+    width: calc(50% - 10px);
+}
+
+.boxes_img img{
+    width:100%;
+    height: auto;
+}
+
+.boxes_txt {
+    font-family: 'Heebo', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.boxes_txt h1{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 5px;
+}
+
+.boxes_txt ul{
+    font-size: 1.5em;
+    margin: 0;
+}
+.boxes_txt a{
+    margin-bottom: 0;
+}
+.boxes_txt a:hover{
+    color: blue;
+}
+#Prices{
+    font-size: 4em;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+footer{
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span{
+    text-align: center;
+    color:gray;
+}
+
+#menu {
+    display: none;
+}
+
+#menu div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+
+@media (max-width: 700px) {
+    #links {
+      display: none;
+    }
+    #links div{
+        display: none;
+    }
+    #menu {
+      display: block;
+    }
+}
+
+.boxes_img_mobile{
+    display: none;
+    
+}
+
+.boxes_img_mobile img{
+    width:100%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    body {
+      font-size: 8pt;
+    }
+}
+
+@media (max-width: 700px) {
+    .Info{
+      flex-direction: column;
+    }
+    .boxes_img_mobile{
+        display: block;
+    }
+    .boxes_img_mobile, .boxes_txt{
+        width: 100%;
+    }
+    .boxes_img{
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+      height: 300px;
+      line-height: 1.2;
+    }
+}
+
+/*stile aggiunto per mhw3*/
+
+#modale.hidden {
+	display: none; 
+}
+
+#modale {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	
+	background-color: rgba(255, 255, 255, 0.95);
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+    
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.album{
+    max-width: 100%;  
+    max-height: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.album div{
+    box-sizing: border-box;
+    width: 20%;
+    /*margin-bottom: 20px;*/
+    padding: 10px;
+}
+
+.album img{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+   /* .album{
+        flex-direction: column;
+    }*/
+    .album div{
+        width: 45%;
+    }
+    #modale{
+        overflow: auto;
+    }
+}
+
+a img{
+    width: 7%;
+}
+
+#links{
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 42%;
+}
+
+
