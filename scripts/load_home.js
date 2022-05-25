@@ -43,11 +43,15 @@ function onJsonHome(json){
     
 }
 console.log("loading home page utente");
-/*text = encodeURIComponent("Milano");
-img_request = pixabay_endpoint + '?key='  + pixabay_key + '&q=' + text + '&orientation=horizontal';
-fetch(img_request).then(onResponse).then(onJsonHome);
-*/
 fetch("load_home.php").then(onResponse).then(onJsonHome);
+
+/*menu mobile */
+function onClickMenu(event){
+    content = document.querySelector('.dropdown-content');
+    if(content.style.display === 'none') content.style.display = 'block';
+    else content.style.display = 'none';
+}
+document.querySelector('.dropbtn').addEventListener('click', onClickMenu);
 
 
 

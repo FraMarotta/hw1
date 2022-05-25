@@ -40,11 +40,13 @@
                 </div>
               </div>
               <!-- menu tre trattini versione mobile-->
-              <div id="menu">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
+              <div class="dropdown">
+                <button class="dropbtn">MENU</button>
+                <div class="dropdown-content" style="display:none">
+                  <a href="logged_home.php">Home</a>
+                  <a href="home.php">LOGOUT</a>
+                </div>
+            </div>
             </nav>
             <h1>
               <em>Il turismo riparte!</em><br/>
