@@ -24,6 +24,9 @@
                     </div>
                 </section>
             </main>
-
+            <footer>
+              <span>Francesco Marotta 1000001522 ©</span>
+            </footer>
     </body>
+    
 </html>

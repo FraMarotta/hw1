@@ -188,56 +188,11 @@ footer span{
     color:gray;
 }
 
-.dropdown-content a{
-    letter-spacing: 1px;
-    text-transform: uppercase; 
-    font-weight: bolder;
-    color: white;
-    text-decoration: underline;
-    cursor: pointer;
-    z-index: 1;
-}
-.dropdown-content{
-    text-align: right;
-}
-.dropdown{
-    display: none;
-}
-.dropbtn{
-    height: 30px;
-	width: 50px;
-	margin: 10px auto;
-	display: block;
-	color: rgba(8,48,85,255);
-	background: white;
-	font-size: 1em;
-	font-weight: bold;
-	outline: none;
-	border: none;
-	border-radius: 100px;
-	cursor: pointer;
-}
-.dropbtn:hover{
-	background: skyblue;
-}
-
-#menu div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-}
 
 
 @media (max-width: 700px) {
-    #links {
+    .welcome {
       display: none;
-    }
-    #links div{
-        display: none;
-    }
-    .dropdown {
-      display: block;
     }
 }
 

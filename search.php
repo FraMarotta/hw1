@@ -53,5 +53,8 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <br>
+        <footer>
+              <span>Francesco Marotta 1000001522 ©</span>
+        </footer>
     </body>
 </html>

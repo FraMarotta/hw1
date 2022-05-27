@@ -2,6 +2,7 @@ body{
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
 	background-color: rgba(1,143,182,255);
+  margin: 0;
 }
 
 button{
@@ -113,4 +114,21 @@ section{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+
+footer{
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  background-color: black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span{
+  text-align: center;
+  color:gray;
 }
