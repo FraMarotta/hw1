@@ -15,7 +15,7 @@ function checkPwd($password){
             $upp = $upp + $val;
         }
     }
-    if(($num < 2) || ($upp < 1)){
+    if(($num < 1) || ($upp < 1)){
         return 0;
     }
     return 1;
@@ -100,7 +100,7 @@ function checkUser($username){
 					<span id = 'usr' class = "msg errore"> Username non disponibile</span>
 					<button>Sign up</button>
 					<div class = "specs">
-						La Password deve essere lunga almeno 8 caratteri e avere almeno 1 lettera maiuscola e 2 caratteri numerici
+						La Password deve essere lunga almeno 8 caratteri e avere almeno 1 lettera maiuscola e 1 carattere numerici
 					</div>
 					
 					<?php

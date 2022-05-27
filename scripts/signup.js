@@ -1,6 +1,6 @@
 function checkPassword(event) { 
     const passwordInput = event.currentTarget; 
-    var regularExpression = /^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9]{8,16}$/; 
+    var regularExpression = /^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*]{8,16}$/; 
     if (!(passwordInput.value.length >= 8 && regularExpression.test(passwordInput.value))) 
         document.querySelector('#psw').classList.remove('msg'); 
     else 
