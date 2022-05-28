@@ -63,20 +63,3 @@ p{
 	margin-top: 5px;
 	font-size: 1.2em;
 }
-
-footer{
-    text-align: center;
-    font-weight: lighter;
-    letter-spacing: 3px;
-    background-color: black;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-footer span{
-    text-align: center;
-    color:gray;
-}

@@ -8,10 +8,6 @@
     curl_setopt($curl, CURLOPT_URL, $api_url);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
     $result = curl_exec($curl);
-    $json = json_decode($result, true); 
-    //json->array
-    //print_r($json['hits'][0]['previewURL']);
-    //$imageUrl = $json['hits'][0]['webformatURL'];
     echo $result;
     curl_close($curl);
 ?>

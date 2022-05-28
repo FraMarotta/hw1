@@ -23,7 +23,7 @@ function checkPwd($password){
 
 function checkUser($username){
     $conn = mysqli_connect("localhost", "root", "", "si_viaggia");
-    $query = "SELECT * FROM utenti WHERE username = ' " .$username. " '";
+    $query = "SELECT * FROM utenti WHERE username = '$username'";
     $res = mysqli_query($conn, $query);
     if(mysqli_num_rows($res)>0)
         return 0;

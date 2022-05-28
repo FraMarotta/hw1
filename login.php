@@ -14,8 +14,6 @@
 			$usr = mysqli_real_escape_string($conn,$_POST["username"]);
 			$pwd = mysqli_real_escape_string($conn,$_POST["password"]);
 			$query1 = "SELECT * FROM utenti WHERE username = '$usr'AND password = '$pwd'";
-			$query2 = " AND password = ' " .$pwd. " '";
-			$query = $query1 . $query2; 
 			$res = mysqli_query($conn, $query1);
 			if(mysqli_num_rows($res)>0)
 			{	
